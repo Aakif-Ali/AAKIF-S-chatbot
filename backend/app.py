@@ -185,4 +185,4 @@ def server_error(error):
 
 if __name__ == '__main__':
     init_rag_engine()
-    app.run(host='0.0.0.0', port=FLASK_PORT, debug=FLASK_DEBUG)
+    app.run(host='0.0.0.0', port=FLASK_PORT, debug=False)

@@ -14,7 +14,7 @@
     "react-dom": "^18.2.0",
     "axios": "^1.6.0",
     "highlight.js": "^11.9.0",
-    "react-highlight": "^0.16.1"
+    "react-highlight": "^0.15.0"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.2.1",

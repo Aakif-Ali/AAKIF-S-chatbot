@@ -61,12 +61,21 @@ class CodeLoader:
         Returns:
             List containing a single LangChain Document
         """
-        file_obj = Path(file_path)
+        file_obj = Path(file_path) 
+
+        print("filepath received:", file_path)
+        print("file_obj:", file_obj)
+        print("suffix:", repr(file_obj.suffix))
+        print("suffix lower:", repr(file_obj.suffix.lower()))
         
         if not file_obj.exists():
             logger.error(f"File does not exist: {file_path}")
             return []
         
+        print("Uploaded file:", file_obj)
+        print("Extension:", repr(file_obj.suffix.lower()))
+        print("Supported:", self.supported_extensions)
+
         if file_obj.suffix.lower() not in self.supported_extensions:
             logger.error(f"Unsupported file type: {file_obj.suffix}")
             return []

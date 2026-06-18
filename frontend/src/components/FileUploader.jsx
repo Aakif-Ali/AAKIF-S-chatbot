@@ -51,7 +51,7 @@ function FileUploader({ onUploadSuccess }) {
     setMessage(null)
 
     try {
-      const response = await axios.post('/api/ingest/text', {
+      const response = await axios.post('http://localhost:3000/api/ingest/file', {
         code: textInput,
         language: 'unknown'
       })
